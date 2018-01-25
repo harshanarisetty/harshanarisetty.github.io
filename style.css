@@ -1,0 +1,124 @@
+body {
+    display: grid;
+    grid-template-rows: 20% 58px auto 150px;
+    grid-template-areas: "header" "nav " "main" "footer";
+   background-image: url("https://designshack.net/wp-content/uploads/svg-background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-areas: "content user";
+    
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    align-self: center;
+}
+.nav {
+    grid-area: nav;
+    background-color: black;
+}
+.nav ul{
+    margin: 0px;
+}
+.nav ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    padding-right: 10px;
+    padding: 20px;
+
+}
+h2{
+    color: rgb(255, 43, 106);
+    
+}
+
+li a {
+    color: aliceblue;
+    text-decoration: none;    
+}
+a{
+    color: rgb(226, 87, 45);
+    text-decoration: none;
+    
+}
+.content p a:hover{
+    color: rgb(58, 76, 233);
+    transition-duration: 0.5s;
+    text-shadow: 0 0 5px #FF0000;
+}
+.nav ul li:hover{
+    background-color: gray;
+}
+
+.content {
+    grid-area: content;
+}
+
+#even{
+    background-color: rgb(62, 203, 255);
+    
+}
+
+.content ul li{
+    list-style: square;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.content ul li ul li{
+    list-style: circle;
+    color: cornflowerblue;
+    font-weight: normal;
+    font-style: italic;
+    padding: 5px;
+}
+
+
+.user {
+    margin-top: -20%;
+    grid-area: user;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.footer {
+    
+    grid-area: footer;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer ul li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+
+}
+.footer ul li a img{
+    height: 40px;
+    width: 40px;
+    opacity: 0.8;
+}
+.footer ul li a img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+.footer p{
+    color: rgb(0, 4, 221);
+}
+table caption{
+    padding-top:5%; 
+}
+table td,th{
+    padding: 10px;
+}
